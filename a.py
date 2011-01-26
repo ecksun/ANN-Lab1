@@ -4,8 +4,8 @@ import pylab
 import mlp
 import sys
 
-# test = "test_merged.py"
-test = "test_separated.py"
+test = "test_merged.py"
+# test = "test_separated.py"
 
 execfile(test)
 
@@ -63,10 +63,10 @@ def do(beta, eta, iterations, color = 'k'):
 
 
 # Leker med eta
-do(1, 0.1, 1000, 'r')
-do(1, 0.25, 1000, 'pink')
-do(1, 0.5, 1000, 'g')
-do(1, 0.9, 1000, 'b')
+# do(1, 0.1, 1000, 'r')
+# do(1, 0.25, 1000, 'pink')
+# do(1, 0.5, 1000, 'g')
+# do(1, 0.9, 1000, 'b')
 
 # leker med beta
 # do(0.1, 0.25, 1000, 'r')
@@ -74,8 +74,8 @@ do(1, 0.9, 1000, 'b')
 # do(1, 0.25, 1000, 'b')
 
 # leker med iterationer
-# do(1, 0.25, 10, 'r')
-# do(1, 0.25, 1000, 'g')
-# do(1, 0.25, 100000, 'b')
+do(1, 0.25, 10, 'r')
+do(1, 0.25, 1000, 'g')
+do(1, 0.25, 100000, 'b')
 
 pylab.show ( )

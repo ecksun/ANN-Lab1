@@ -1,0 +1,50 @@
+test_separated.py_beta-1.000000_eta-0.250000_iterations-10.000000
+Iteration:  0  Error:  14.4308430021
+test_separated.py_beta-1.000000_eta-0.250000_iterations-1000.000000
+Iteration:  900  Error:  1.15919184275
+test_separated.py_beta-1.000000_eta-0.250000_iterations-100000.000000
+Iteration:  99900  Error:  1.50001193743
+
+est_separated.py_beta-0.100000_eta-0.250000_iterations-1000.000000
+Iteration:  900  Error:  1.31814124584
+test_separated.py_beta-0.500000_eta-0.250000_iterations-1000.000000
+Iteration:  900  Error:  1.50293349978
+test_separated.py_beta-1.000000_eta-0.250000_iterations-1000.000000
+Iteration:  900  Error:  1.15456899103
+
+test_separated.py_beta-1.000000_eta-0.100000_iterations-1000.000000
+Iteration:  900  Error:  1.34455243127
+test_separated.py_beta-1.000000_eta-0.250000_iterations-1000.000000
+Iteration:  900  Error:  1.15597019287
+test_separated.py_beta-1.000000_eta-0.500000_iterations-1000.000000
+Iteration:  900  Error:  1.5000075243
+test_separated.py_beta-1.000000_eta-0.900000_iterations-1000.000000
+Iteration:  900  Error:  1.99980554919
+
+
+
+test_merged.py_beta-1.000000_eta-0.100000_iterations-1000.000000
+Iteration:  900  Error:  7.68618997441
+test_merged.py_beta-1.000000_eta-0.250000_iterations-1000.000000
+Iteration:  900  Error:  7.53784164326
+test_merged.py_beta-1.000000_eta-0.500000_iterations-1000.000000
+Iteration:  900  Error:  8.67859107414
+test_merged.py_beta-1.000000_eta-0.900000_iterations-1000.000000
+Iteration:  900  Error:  12.5051226197
+
+
+test_merged.py_beta-0.100000_eta-0.250000_iterations-1000.000000
+Iteration:  900  Error:  8.35802348948
+test_merged.py_beta-0.500000_eta-0.250000_iterations-1000.000000
+Iteration:  900  Error:  8.64744786215
+test_merged.py_beta-1.000000_eta-0.250000_iterations-1000.000000
+Iteration:  900  Error:  7.50153069974
+
+
+test_merged.py_beta-1.000000_eta-0.250000_iterations-10.000000
+Iteration:  0  Error:  13.6541182982
+test_merged.py_beta-1.000000_eta-0.250000_iterations-1000.000000
+Iteration:  900  Error:  8.07116487705
+test_merged.py_beta-1.000000_eta-0.250000_iterations-100000.000000
+Iteration:  99900  Error:  9.51408058136
+
