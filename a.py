@@ -9,8 +9,8 @@ test = "test_merged.py"
 
 execfile(test)
 
-# classA = numpy.random.randn(50,2)+1
-# classB = numpy.random.randn(50,2)-1
+classA = numpy.random.randn(50,2)+2
+classB = numpy.random.randn(50,2)-2
 
 
 classC = numpy.concatenate((classA, classB))
@@ -74,8 +74,8 @@ def do(beta, eta, iterations, color = 'k'):
 # do(1, 0.25, 1000, 'b')
 
 # leker med iterationer
-do(1, 0.25, 10, 'r')
+# do(1, 0.25, 10, 'r')
 do(1, 0.25, 1000, 'g')
-do(1, 0.25, 100000, 'b')
+# do(1, 0.25, 100000, 'b')
 
 pylab.show ( )

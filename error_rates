@@ -48,3 +48,16 @@ Iteration:  900  Error:  8.07116487705
 test_merged.py_beta-1.000000_eta-0.250000_iterations-100000.000000
 Iteration:  99900  Error:  9.51408058136
 
+
+test_merged.py_beta-1.000000_eta-0.250000_iterations-1000.000000
+Iteration:  0  Error:  13.3877438631
+Iteration:  100  Error:  1.07874435855e-09
+Iteration:  200  Error:  1.0779733091e-09
+Iteration:  300  Error:  1.07797251083e-09
+Iteration:  400  Error:  1.07797173301e-09
+Iteration:  500  Error:  1.07797095519e-09
+Iteration:  600  Error:  1.07797017738e-09
+Iteration:  700  Error:  1.07796939956e-09
+Iteration:  800  Error:  1.07796862175e-09
+Iteration:  900  Error:  1.07796784394e-09
+
