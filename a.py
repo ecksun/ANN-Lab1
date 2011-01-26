@@ -4,8 +4,10 @@ import pylab
 import mlp
 import sys
 
-# execfile("test_separated.py")
-execfile("test_merged.py")
+# test = "test_merged.py"
+test = "test_separated.py"
+
+execfile(test)
 
 # classA = numpy.random.randn(50,2)+1
 # classB = numpy.random.randn(50,2)-1
@@ -26,12 +28,14 @@ pylab.plot(classB[:,0], classB[:,1], 'r.')
 # pylab.plot(classC[:,0], classC[:,1], 'r.')
 # pylab.show()
 
-def do(nhidden, beta, momentum, eta, color = 'k'):
-    print "running with values %f %f %f %f" % (nhidden, beta, momentum, eta)
+def do(beta, eta, iterations, color = 'k'):
+    nhidden = 2
+    momentum = 0.9
+    print "%s_beta-%f_eta-%f_iterations-%f" % (test, beta, eta, iterations)
 
     tron = mlp.mlp(classC, targetC, nhidden, beta, momentum, 'logistic')
 
-    tron.mlptrain(classC, targetC, eta, 1000)
+    tron.mlptrain(classC, targetC, eta, iterations)
 
     xrange = numpy.arange( -4 , 4 , 0.1 )
 
@@ -54,26 +58,24 @@ def do(nhidden, beta, momentum, eta, color = 'k'):
 
     pylab.contour ( xrange , yrange , indicator , ( 0.5 , ), colors=color )
 
+#0126 185826 <@tote> beta, learning rate, iterations, step_size(????)
+
+
+
 # Leker med eta
-# do(2, 1, 0.9, 0.8,'r')
-# do(2, 1, 0.9, 0.5,'g')
-# do(2, 1, 0.9, 0.1,'b')
+do(1, 0.1, 1000, 'r')
+do(1, 0.25, 1000, 'pink')
+do(1, 0.5, 1000, 'g')
+do(1, 0.9, 1000, 'b')
 
+# leker med beta
+# do(0.1, 0.25, 1000, 'r')
+# do(0.5, 0.25, 1000, 'g')
+# do(1, 0.25, 1000, 'b')
 
-#leker med momentum
-# do(2, 1, 0.9, 0.5,'r')
-# do(2, 1, 0.5, 0.5,'g')
-# do(2, 1, 0.1, 0.5,'b')
-
-#leker med beta
-# do(2, 1, 0.9, 0.5,'r')
-# do(2, 0.5, 0.9, 0.5,'g')
-# do(2, 0.1, 0.9, 0.5,'b')
-
-
-# leker med nhidden
-do(1, 1, 0.9, 0.5,'r')
-do(2, 1, 0.9, 0.5,'g')
-do(3, 1, 0.9, 0.5,'b')
+# leker med iterationer
+# do(1, 0.25, 10, 'r')
+# do(1, 0.25, 1000, 'g')
+# do(1, 0.25, 100000, 'b')
 
 pylab.show ( )
